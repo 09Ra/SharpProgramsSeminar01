@@ -8,10 +8,11 @@ double[] Array(int size, int leftRange, int rightRange)
     Random rand=new Random();
     for (int i = 0; i < array.Length; i++)
     {
-        array[i]= rand.Next(leftRange,rightRange+1);
+        array[i]= rand.Next(leftRange,rightRange+1)+Math.Round(rand.NextDouble(),2);
     }
     return array;
 }
+
 
 void PrintArray(double[] array)
 {
